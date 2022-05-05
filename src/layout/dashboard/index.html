@@ -15,27 +15,19 @@
   </head>
   <body class="bg-ligth">
     <main class="dashboard">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-primary text-white fixed-top"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold" href="#">Trello</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <h6>[m]..</h6>
+          <a class="navbar-brand fw-bold" href="#"> I-Trello</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
-                  id="workSapace"
+                  id="workSpace"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -44,30 +36,29 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <h6 class="dropdown-header">Espacios de trabajo</h6>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      disabled
-                      aria-label="Close"
-                    ></button>
+                    <h6 class="dropdown-header">Espacios de trabajo X</h6>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <h6 class="dropdown-header">Tus espacios de trabajo</h6>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Espacio de trabajo de Trello</a
-                    >
-                  </li>
+                  <div class="container-information">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >+ Crear un Espacio de trabajo</a
+                      >
+                    </li>
+                    <li>
+                      <p class="dropdown-paragraph">
+                        Un Espacio de trabajo es un grupo de tableros y
+                        personas, que puede utilizar para organizar su trabajo.
+                      </p>
+                    </li>
+                  </div>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
-                  id="recent"
+                  id="workSpace"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -75,14 +66,50 @@
                   Reciente
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><h6 class="dropdown-header">Tableros recientes X</h6></li>
-                  <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item my-0" href="#"
-                      ><h5>Borrador</h5>
-                      <h6>Espacio de trabajo de Trello</h6>
-                    </a>
+                    <h6 class="dropdown-header">Tableros recientes X</h6>
                   </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <div class="container-information">
+                    <li>
+                      <h6 class="dropdown-header">AQUÍ VA UNA IMG</h6>
+                    </li>
+                    <li>
+                      <p class="dropdown-paragraph">
+                        Aquí encontrará todos los tableros que haya visto
+                        rencientemente.
+                      </p>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="workSpace"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tableros Destacados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <h6 class="dropdown-header">Tableros destacados X</h6>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <div class="container-information">
+                    <li>
+                      <h6 class="dropdown-header">AQUÍ VA UNA IMG</h6>
+                    </li>
+                    <li>
+                      <p class="dropdown-paragraph">
+                        Marque los tableros importantes para acceder a ellos de
+                        forma rápida y sencilla.
+                      </p>
+                    </li>
+                  </div>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -106,23 +133,6 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Tableros destacados
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="button">
-                      <li>
-                        <h6 class="dropdown-header">Tableros Destacados</h6>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li><p>Acá van los tableros destacados</p></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group dropend">
-                    <button
-                      type="button"
-                      class="btn dropdown-toggle"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
                       Plantillas
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="button">
@@ -134,14 +144,17 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Búsqueda"
-                aria-label="Search"
-              />
-            </form>
+            <div class="nav-container-end">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Búsqueda"
+                  aria-label="Search"
+                />
+              </form>
+              <h6>I..B..PRO</h6>
+            </div>
           </div>
         </div>
       </nav>
