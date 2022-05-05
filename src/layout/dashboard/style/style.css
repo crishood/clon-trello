@@ -1,9 +1,59 @@
+.container-main {
+  display: flex;
+  justify-content: center;
+}
+
 div.home-container {
   width: 272px;
   height: 654px;
-  left: 370px;
   margin-top: 40px;
   justify-content: center;
+}
+div.middle-container {
+  width: 825px;
+  height: 654px;
+  display: flex;
+}
+
+div.text-container {
+  width: 825px;
+  height: 156px;
+  display: flex;
+  margin: 40px 16px 0px 16px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#title-tc {
+  font-size: 16px;
+  color: #5e6c84;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+#text-tc,
+#text-tc > a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #828da0;
+}
+
+#btn-tc {
+  width: 215px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: rgba(9, 30, 66, 0.04);
+  border: none;
+  color: #172b4d;
+}
+
+#btn-tc:hover,
+div > a.bt-nav:hover,
+#dropdown1:hover {
+  background-color: rgb(239, 239, 239);
 }
 
 div > a.bt-nav {
@@ -11,9 +61,6 @@ div > a.bt-nav {
   height: 32px;
   font-size: 14px;
   text-align: left;
-}
-div > a.bt-nav:hover {
-  background-color: rgb(216, 214, 214);
 }
 
 .container-ls {
@@ -58,7 +105,4 @@ div > a.bt-nav:hover {
   width: 240px;
   font-size: 14px;
   font-weight: bold;
-}
-#dropdown1:hover {
-  background-color: rgb(216, 214, 214);
 }
