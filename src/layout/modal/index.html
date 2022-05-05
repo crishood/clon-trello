@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/107eaa10f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Modal</title>
+  </head>
+  <body class="bg-light">
+    <main class="register container-fluid mt-5 p-0">
+      <div class="register__header--brand mx-auto" style="width: 200px">
+        <img width="200" src="../../assets/logo/logo.svg" alt="">
+      </div>
+      <div class="register__form border mx-auto px-5 py-4">
+        <div class="container-fluid mt-2">
+          <h5 class="register__form__title text-center font-weight-bold text-muted mb-5">
+            Crea tu cuenta
+          </h5>
+          <form>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-13">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Introduce el correo electronico"
+                  />
+                  <small
+                    id="emailHelp"
+                    class="form-text text-muted mt-3 test-justify"
+                    >Al registrarte, confirmas que has leído y aceptado nuestras
+                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                      >Condiciones del Servicio</a
+                    >
+                    y nuestra
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      Política de Privacidad.</a
+                    ></small
+                  >
+                  <button class="btn btn-success btn-block mt-3" type="submit">
+                    Continuar
+                  </button>
+                  <p class="text-muted text-center mt-3">O</p>
+
+                  <button class="btn btn-light btn-block border" type="submit">
+                    <i class="fa-brands fa-google"></i> Continuar con Google
+                  </button>
+                  <button
+                    class="btn btn-light btn-block border mt-3"
+                    type="submit"
+                  >
+                  <i class="fa-brands fa-microsoft"></i> Continuar con Microsoft
+                  </button>
+                  <button
+                    class="btn btn-light btn-block border mt-3 mb-3"
+                    type="submit"
+                  >
+                  <i class="fa-brands fa-apple"></i> Continuar con Apple
+                  </button>
+                  <hr />
+                  <p class="text-center mb-5">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                      >¿Ya tienes cuenta? Inicia sesión</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
