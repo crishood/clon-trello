@@ -1,0 +1,64 @@
+div.home-container {
+  width: 272px;
+  height: 654px;
+  left: 370px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+div > a.bt-nav {
+  width: 240px;
+  height: 32px;
+  font-size: 14px;
+  text-align: left;
+}
+div > a.bt-nav:hover {
+  background-color: rgb(216, 214, 214);
+}
+
+.container-ls {
+  display: row;
+  text-align: left;
+  margin-bottom: 12px;
+  width: 240px;
+}
+.container-dropdown {
+  width: 240px;
+  height: 126px;
+  margin-top: 8px;
+}
+.container-add {
+  width: 240px;
+  height: 32px;
+  align-items: center;
+  display: flex;
+}
+#small-add {
+  font-size: 12px;
+  padding-left: 10px;
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+}
+#btn-add {
+  width: 20px;
+  height: 20px;
+  border: 0;
+}
+.small-add-span {
+  width: 50px;
+  float: right;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 115px;
+  font-size: 13px;
+}
+
+#dropdown1 {
+  width: 240px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#dropdown1:hover {
+  background-color: rgb(216, 214, 214);
+}

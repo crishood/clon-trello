@@ -1,82 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Clone Trello</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body class="bg-ligth">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-ligth">
     <main class="dashboard">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white">
-            <div class="container-fluid">
-              <a class="navbar-brand fw-bold" href="#">Trello</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="workSapace" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Espacios de trabajo
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><h6 class="dropdown-header">Espacios de trabajo</h6><button type="button" class="btn-close" disabled aria-label="Close"></button></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><h6 class="dropdown-header">Tus espacios de trabajo</h6></li>
-                      <li><a class="dropdown-item" href="#">Espacio de trabajo de Trello</a></li>
-                    </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Trello</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="workSapace"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Espacios de trabajo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <h6 class="dropdown-header">Espacios de trabajo</h6>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      disabled
+                      aria-label="Close"
+                    ></button>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="recent" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Reciente
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><h6 class="dropdown-header">Tableros recientes   X</h6></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item my-0" href="#"><h5>Borrador</h5><h6>Espacio de trabajo de Trello</h6> </a></li>
-                    </ul>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <h6 class="dropdown-header">Tus espacios de trabajo</h6>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="more" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Más
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Espacio de trabajo de Trello</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="recent"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Reciente
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><h6 class="dropdown-header">Tableros recientes X</h6></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item my-0" href="#"
+                      ><h5>Borrador</h5>
+                      <h6>Espacio de trabajo de Trello</h6>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><h6 class="dropdown-header">Más            X</h6></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <div class="btn-group dropend">
-                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tableros destacados
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="button">
-                          <li><h6 class="dropdown-header">Tableros Destacados</h6></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><p>Acá van los tableros destacados</p></li>
-                        </ul>
-                        </div>
-                        <div class="btn-group dropend">
-                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                              Plantillas
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="button">
-                              <li><h6 class="dropdown-header">Plantillas     X</h6></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><p>Se despliegan las plantillas</p></li>
-                            </ul>
-                            </div>
-                    </ul>                    
-                    </li>                  
-                </ul>                 
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">                  
-                </form>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="more"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Más
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><h6 class="dropdown-header">Más X</h6></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <div class="btn-group dropend">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Tableros destacados
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="button">
+                      <li>
+                        <h6 class="dropdown-header">Tableros Destacados</h6>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><p>Acá van los tableros destacados</p></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group dropend">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Plantillas
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="button">
+                      <li><h6 class="dropdown-header">Plantillas X</h6></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><p>Se despliegan las plantillas</p></li>
+                    </ul>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Búsqueda"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="home-container d-inline-block sticky-top">
+          <div class="container">
+            <div class="container-ls">
+              <a href="#" class="bt-nav btn btn-light"
+                ><strong>Tableros</strong>
+              </a>
+              <a href="#" class="bt-nav mt-1 btn btn-light"
+                ><strong>Plantillas</strong>
+              </a>
+              <a href="#" class="bt-nav mt-1 btn btn-light"
+                ><strong>Inicio</strong>
+              </a>
+            </div>
+            <div class="container-dropdown">
+              <div class="container-add">
+                <span id="small-add" class="align-middle"
+                  >Espacios de trabajo
+                  <div class="small-add-span">
+                    <button id="btn-add" class="text-secondary">+</button>
+                  </div></span
+                >
+              </div>
+              <div class="dropdown show">
+                <a
+                  id="dropdown1"
+                  class="btn btn-light dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <str>Copy
+                </a>
               </div>
             </div>
-          </nav>
+          </div>
+        </div>
+      </div>
     </main>
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
