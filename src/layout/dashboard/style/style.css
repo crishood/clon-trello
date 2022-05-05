@@ -1,9 +1,47 @@
-.container-information {
+.bg-primary{
+  background-color: #59A7A7 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.dashboard__nav--brand{
+  padding: 0.5rem;
+
+}
+
+.dashboard__nav--notifications{
+  color: white;
+  margin-left: 16px;
+}
+.dashboard__nav--notifications:hover{
+  color: white;
+}
+.dashboard__nav--avatar{
+  color: white;
+  margin-left: 16px;
+  background-color: #E2D469;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard__nav--avatar:hover{
+  color: white;
+}
+
+
+.bt-nav__icon{
+  margin-right: 8px ;
+}
+
+.dashboard__nav__container--information {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.dropdown-paragraph {
+.dashboard__nav__dropdown--info{
   font-size: 12px;
   margin: 5px 10px;
 }
@@ -12,48 +50,45 @@
   align-items: center;
 }
 
-.container-main {
+.dashboard__main {
   display: flex;
   justify-content: center;
-}
-
-div.home-container {
-  width: 272px;
-  height: 654px;
   margin-top: 100px;
+}
+
+.dashboard__main__aside {
+  width: 272px;
+  
   justify-content: center;
 }
-div.middle-container {
+.dasboard__main__content {
   width: 825px;
-  height: 654px;
   display: flex;
 }
 
-div.text-container {
+.dasboard__main__content--workspaces {
   width: 825px;
-  height: 156px;
   display: flex;
-  margin: 100px 16px 0px 16px;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 12px;
 }
 
-#title-tc {
+.dasboard__main__content--title {
   font-size: 16px;
   color: #5e6c84;
   font-weight: 700;
   line-height: 24px;
 }
 
-#text-tc,
-#text-tc > a {
+.dasboard__main__content--notice, 
+.dasboard__main__content--notice > a{
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #828da0;
 }
 
-#btn-tc {
+.dashboard__main__content--btn {
   width: 215px;
   height: 32px;
   font-size: 14px;
@@ -64,37 +99,37 @@ div.text-container {
   color: #172b4d;
 }
 
-#btn-tc:hover,
-div > a.bt-nav:hover,
+.dashboard__main__content--btn:hover,
+.dashboard__main__aside--btn:hover,
 #dropdown1:hover {
   background-color: rgb(239, 239, 239);
 }
 
-div > a.bt-nav {
+.dashboard__main__aside--btn{
   width: 240px;
   height: 32px;
   font-size: 14px;
   text-align: left;
 }
 
-.container-ls {
+.dashboard__main__aside--menu {
   display: row;
   text-align: left;
   margin-bottom: 12px;
   width: 240px;
 }
-.container-dropdown {
+.dashboard__main__aside--copy{
   width: 240px;
   height: 126px;
   margin-top: 8px;
 }
-.container-add {
+.dashboard__main__aside--add {
   width: 240px;
   height: 32px;
   align-items: center;
   display: flex;
 }
-#small-add {
+.dashboard__main__aside--add-button {
   font-size: 12px;
   padding-left: 10px;
   color: rgb(129, 129, 129);

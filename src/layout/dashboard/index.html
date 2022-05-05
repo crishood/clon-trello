@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
     <title>Clone Trello</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,15 +11,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/107eaa10f1.js" crossorigin="anonymous"></script>
   </head>
   <body class="bg-ligth">
     <main class="dashboard">
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-primary text-white fixed-top"
+        class="dashboard__nav navbar navbar-expand-lg navbar-dark bg-primary text-white fixed-top"
       >
         <div class="container-fluid">
-          <h6>[m]..</h6>
-          <a class="navbar-brand fw-bold" href="#"> I-Trello</a>
+          <a class="dashboard__nav--brand" href="#"><img width="75" src="../../assets/logo/logo-white.svg" alt=""></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
@@ -36,17 +36,16 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <h6 class="dropdown-header">Espacios de trabajo X</h6>
+                    <h6 class="dropdown-header">Espacios de trabajo</h6>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <div class="container-information">
+                  <div class="dashboard__nav__container--information container-information">
                     <li>
-                      <a class="dropdown-item" href="#"
-                        >+ Crear un Espacio de trabajo</a
+                      <a class="dropdown-item" href="#">+ Crear un Espacio de trabajo</a
                       >
                     </li>
                     <li>
-                      <p class="dropdown-paragraph">
+                      <p class="dashboard__nav__dropdown--info">
                         Un Espacio de trabajo es un grupo de tableros y
                         personas, que puede utilizar para organizar su trabajo.
                       </p>
@@ -67,16 +66,13 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <h6 class="dropdown-header">Tableros recientes X</h6>
+                    <h6 class="dropdown-header">Tableros recientes</h6>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <div class="container-information">
+                  <div class="dashboard__nav__container--information">
                     <li>
-                      <h6 class="dropdown-header">AQUÍ VA UNA IMG</h6>
-                    </li>
-                    <li>
-                      <p class="dropdown-paragraph">
-                        Aquí encontrará todos los tableros que haya visto
+                      <p class="dashboard__nav__dropdown--info">
+                        Aquí encontrarás todos los tableros que hayas visto
                         rencientemente.
                       </p>
                     </li>
@@ -96,50 +92,16 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <h6 class="dropdown-header">Tableros destacados X</h6>
+                    <h6 class="dropdown-header">Tableros destacados</h6>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <div class="container-information">
+                  <div class="dashboard__nav__container--information">
                     <li>
-                      <h6 class="dropdown-header">AQUÍ VA UNA IMG</h6>
-                    </li>
-                    <li>
-                      <p class="dropdown-paragraph">
-                        Marque los tableros importantes para acceder a ellos de
+                      <p class="dashboard__nav__dropdown--info">
+                        Marca los tableros importantes para acceder a ellos de
                         forma rápida y sencilla.
                       </p>
                     </li>
-                  </div>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="more"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Más
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><h6 class="dropdown-header">Más X</h6></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <div class="btn-group dropend">
-                    <button
-                      type="button"
-                      class="btn dropdown-toggle"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Plantillas
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="button">
-                      <li><h6 class="dropdown-header">Plantillas X</h6></li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li><p>Se despliegan las plantillas</p></li>
-                    </ul>
                   </div>
                 </ul>
               </li>
@@ -153,33 +115,23 @@
                   aria-label="Search"
                 />
               </form>
-              <h6>I..B..PRO</h6>
+              <a href="" class="dashboard__nav--notifications"><i class="fa-solid fa-bell"></i></a>
+              <a href="" class="dashboard__nav--avatar"><i class="fa-solid fa-user-astronaut"></i></a>
             </div>
           </div>
         </div>
       </nav>
-      <div class="container-main container-fluid">
-        <div class="home-container d-inline-block sticky-top">
+      <div class="dashboard__main container-main container-fluid">
+        <div class="dashboard__main__aside home-container d-inline-block sticky-top">
           <div class="container">
-            <div class="container-ls">
-              <a href="#" class="bt-nav btn btn-light"
-                ><strong>Tableros</strong>
-              </a>
-              <a href="#" class="bt-nav mt-1 btn btn-light"
-                ><strong>Plantillas</strong>
-              </a>
-              <a href="#" class="bt-nav mt-1 btn btn-light"
-                ><strong>Inicio</strong>
+            <div class="dashboard__main__aside--menu">
+              <a href="#" class="dashboard__main__aside--btn btn btn-light"
+                ><i class="bt-nav__icon fa-brands fa-flipboard"></i><strong>Tableros</strong>
               </a>
             </div>
-            <div class="container-dropdown">
-              <div class="container-add">
-                <span id="small-add" class="align-middle"
-                  >Espacios de trabajo
-                  <div class="small-add-span">
-                    <button id="btn-add" class="text-secondary">+</button>
-                  </div></span
-                >
+            <div class="dashboard__main__aside--copy">
+              <div class="dashboard__main__aside--add">
+                <span class="dashboard__main__aside--add-btn align-middle">Espacios de trabajo</span>
               </div>
               <div class="dropdown show">
                 <a
@@ -198,16 +150,16 @@
             </div>
           </div>
         </div>
-        <div class="middle-container">
-          <div class="text-container">
-            <h3 id="title-tc">TUS ESPACIOS DE TRABAJO</h3>
-            <p id="text-tc">
-              Todavía no es miembro de ningún Espacio de trabajo.
+        <div class="dasboard__main__content">
+          <div class="dasboard__main__content--workspaces">
+            <h3 class="dasboard__main__content--title">TUS ESPACIOS DE TRABAJO</h3>
+            <p class="dasboard__main__content--notice">
+              Todavía no eres miembro de ningún Espacio de trabajo.
               <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Cree un espacio de trabajo</a
+                >Crea un espacio de trabajo</a
               >
             </p>
-            <button id="btn-tc">Ver todos los tableros creados</button>
+            <button class="dashboard__main__content--btn">Ver todos los tableros creados</button>
           </div>
         </div>
       </div>
